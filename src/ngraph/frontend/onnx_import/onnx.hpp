@@ -25,7 +25,6 @@
 #include "ngraph/function.hpp"
 #include "ngraph/ngraph_visibility.hpp"
 
-/// \brief              Top level nGraph namespace.
 namespace ngraph
 {
     /// \brief          ONNX importer features namespace.

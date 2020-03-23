@@ -61,7 +61,7 @@ public:
 private:
 };
 
-class NGRAPH_API ngraph::cpio::FileInfo
+class ngraph::cpio::FileInfo
 {
 public:
     FileInfo(const std::string& name, size_t size, size_t offset)

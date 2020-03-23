@@ -35,6 +35,7 @@ namespace ngraph
     }
 }
 
+/// \class Allocator
 /// \brief Abstract class for the allocator
 class NGRAPH_API ngraph::runtime::Allocator
 {

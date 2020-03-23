@@ -36,7 +36,8 @@ namespace ngraph
         std::function<bool(ngraph::pattern::RecurrentMatcher& m)>;
 }
 
-/// \brief GraphRewrite (in tandem with \sa Matcher) performs transformations on specified patterns
+/// \class GraphRewrite
+/// \brief (in tandem with \sa Matcher) performs transformations on specified patterns
 ///
 /// Graph rewrite pass essentially allows pass users to rewrite parts of the
 /// input graph in any way they want. Fusion is one example of graph rewrite that
