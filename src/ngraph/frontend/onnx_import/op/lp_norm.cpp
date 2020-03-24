@@ -58,8 +58,10 @@ namespace ngraph
                     std::shared_ptr<ngraph::Node> norm = ngraph::builder::opset1::lp_norm(
                         data, AxisSet{normalize_axis}, static_cast<std::size_t>(p_norm));
 
-                    const auto target_shape = default_opset::Constant::create(
-                        element::i64, Shape{data_rank_value}, data_shape.to_shape());
+                    const auto target_shape =
+                        default_opset::Constant::create(element::i64,
+                                                        Shape{static_cast<size_t>(data_rank_value)},
+                                                        data_shape.to_shape());
 
                     // Create a default axes order matching the data tensor rank and erase the
                     // element at the 'normalize_axis' position. The erased element indicates the
